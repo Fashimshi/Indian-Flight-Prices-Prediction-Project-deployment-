@@ -315,7 +315,7 @@ def predict():
 
         output=round(prediction[0],2)
 
-        return render_template('index.html',prediction_text="Your Flight Price is $ {}".format(output*0.013))
+        return render_template('index.html',prediction_text="Your Flight Price is $ {}".format(round(output*0.013),2))
 
 
     return render_template("index.html")
